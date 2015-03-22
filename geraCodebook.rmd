@@ -1,6 +1,6 @@
 run_analysis Codebook
 ========
-Codebook was generated on `r as.character(Sys.time())` during the same process that generated the dataset. See `run_analysis.r` or `details.md` for details on dataset creation.
+Generated on `r as.character(Sys.time())` by the `details.rmd` file. See `run_analysis.r` or `details.md` for details on dataset creation.
 
 Variable list and descriptions
 ------------------------------

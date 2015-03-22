@@ -1,6 +1,6 @@
 Get and Cleaning data - Project 1
 ============
-Last updated 2015-03-22 12:45:50 using R version 3.1.0 (2014-04-10).
+Last updated 2015-03-22 13:12:14 using R version 3.1.0 (2014-04-10).
 
 
 Instructions for project
@@ -114,7 +114,7 @@ rm(df)
 
 Merge data
 ------------------------------------
-#1 Merges the training and the test sets to create one data set
+1 Merges the training and the test sets to create one data set
 
 Concatenate data.tables
 
@@ -145,7 +145,7 @@ setkey(dt, subject, activityNum)
 
 subset data
 --------------------------------------------
-#2 Extracts only the measurements on the mean and standard deviation for each measurement.
+2 Extracts only the measurements on the mean and standard deviation for each measurement.
 
 read `features.txt` - to know which variables are for the mean and standard deviation.
 
@@ -204,8 +204,8 @@ dt <- dt[, select, with=FALSE]
 
 Name the variables
 ------------------------------
-#3 Uses descriptive activity names to name the activities in the data set
-#4 Appropriately labels the data set with descriptive variable names.
+3 Uses descriptive activity names to name the activities in the data set
+4 Appropriately labels the data set with descriptive variable names.
 
 use descriptive activity names from `activity_labels.txt`
 
@@ -281,7 +281,7 @@ dt$featAxis <- factor(x %*% y, labels=c(NA, "X", "Y", "Z"))
 Write a tidy data set
 ----------------------
 
-#5 Creates a second, independent tidy data set with the average of each variable for each activity and each subject
+5 Creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 
 ```r
